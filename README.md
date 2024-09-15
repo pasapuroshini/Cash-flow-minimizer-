@@ -10,12 +10,7 @@ This is represented below as a directed graph with the directed edge representin
 
 
 
-To pick the first Bank, we calculate the net amount for every Bank by using the below formula and store them in list:
 
-net amount = [Sum of all credits(amounts to be received)] - [Sum of all debits(amounts to pay)]
-
-Now the idea is that we are finding the bank which has minimum net amount(max debtor) (say Bank X, net amount x) and then finding the bank which has the maximum net amount( max creditor) (say Bank Y, net amount y) and also has a common payment mode (say M1) with the former bank. Then we find minimum of absolute value of x and y, lets call it z.
-Now X pays the amount z to Y. Then 3 cases may arrived:
 
 If (magnitude of x) < y => X is completely settled and so removed from the list.
 If (magnitude of x) > y => Y is completely settled and so removed from the list.
