@@ -1,29 +1,9 @@
 # Welcome to the Cash Flow Minimizer System README !!
 ---
 This system minimizes the number of transactions among multiple banks in the different corners of the world that use different modes of payment. There is one world bank (with all payment modes) to act as an intermediary between banks that have no common mode of payment.
+<img width="696" alt="Screenshot 2024-09-15 at 8 19 07 PM" src="https://github.com/user-attachments/assets/65326aac-b4f9-4ac8-996b-b131f31027ca">
 
-# Getting Started
----
-Let's take an example. say we have the following banks:
 
-Bank_of_America (World bank)
-Wells_Fargo
-Royal_Bank_of_Canada
-Westpac
-National_Australia_Bank
-Goldman_Sachs
-Following are the payments to be done:
-    Debtor Bank         Creditor Bank         Amount
-
-Goldman_Sachs          Bank_of_America           Rs 100
-Goldman_Sachs          Wells_Fargo               Rs 300
-Goldman_Sachs          Royal_Bank_of_Canada      Rs 100
-Goldman_Sachs          Westpac                   Rs 100
-National_Australia_Bank Bank_of_America          Rs 300
-National_Australia_Bank Royal_Bank_of_Canada     Rs 100
-Bank_of_America        Wells_Fargo               Rs 400
-Wells_Fargo            Royal_Bank_of_Canada      Rs 200
-Royal_Bank_of_Canada   Westpac                   Rs 500
 This is represented below as a directed graph with the directed edge representing debts. image
 
 But there's a catch!! Each Bank only supports a set of modes of payments and can make or receive payments only via those. Only World Bank suppports all modes of payments. In our current example we have only three payment modes :
