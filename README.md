@@ -13,15 +13,15 @@ Goldman_Sachs
 Following are the payments to be done:
     Debtor Bank         Creditor Bank         Amount
 
-Goldman_Sachs        Bank_of_America           Rs 100
-Goldman_Sachs        Wells_Fargo           Rs 300
-Goldman_Sachs        Royal_Bank_of_Canada       Rs 100
-Goldman_Sachs        Westpac              Rs 100
-National_Australia_Bank      Bank_of_America           Rs 300
-National_Australia_Bank      Royal_Bank_of_Canada          Rs 100
-Bank_of_America          Wells_Fargo             Rs 400
-Wells_Fargo            Royal_Bank_of_Canada       Rs 200
-Royal_Bank_of_Canada        Westpac              Rs 500
+Goldman_Sachs          Bank_of_America           Rs 100
+Goldman_Sachs          Wells_Fargo               Rs 300
+Goldman_Sachs          Royal_Bank_of_Canada      Rs 100
+Goldman_Sachs          Westpac                   Rs 100
+National_Australia_Bank Bank_of_America          Rs 300
+National_Australia_Bank Royal_Bank_of_Canada     Rs 100
+Bank_of_America        Wells_Fargo               Rs 400
+Wells_Fargo            Royal_Bank_of_Canada      Rs 200
+Royal_Bank_of_Canada   Westpac                   Rs 500
 This is represented below as a directed graph with the directed edge representing debts. image
 
 But there's a catch!! Each Bank only supports a set of modes of payments and can make or receive payments only via those. Only World Bank suppports all modes of payments. In our current example we have only three payment modes :
@@ -31,12 +31,12 @@ AliPay
 Paytm
 Following is the list of Banks and their supported payment modes :
 
-Bank_of_America       -   Google_Pay, AliPay, Paytm
-Wells_Fargo          -   Google_Pay, AliPay
-Royal_Bank_of_Canada      -   AliPay
-Westpac             -   Google_Pay, Paytm
-Goldman_Sachs       -   Paytm
-National_Australia_Bank       -   AliPay, Paytm
+Bank_of_America          -   Google_Pay, AliPay, Paytm
+Wells_Fargo              -   Google_Pay, AliPay
+Royal_Bank_of_Canada     -   AliPay
+Westpac                  -   Google_Pay, Paytm
+Goldman_Sachs            -   Paytm
+National_Australia_Bank  -   AliPay, Paytm
 To pick the first Bank, we calculate the net amount for every Bank by using the below formula and store them in list:
 
 net amount = [Sum of all credits(amounts to be received)] - [Sum of all debits(amounts to pay)]
