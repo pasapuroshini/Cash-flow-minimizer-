@@ -4,21 +4,12 @@ This system minimizes the number of transactions among multiple banks in the dif
 <img width="696" alt="Screenshot 2024-09-15 at 8 19 07 PM" src="https://github.com/user-attachments/assets/65326aac-b4f9-4ac8-996b-b131f31027ca">
 
 
-This is represented below as a directed graph with the directed edge representing debts. image
+This is represented below as a directed graph with the directed edge representing debts. 
+<img width="801" alt="Screenshot 2024-09-15 at 8 20 12 PM" src="https://github.com/user-attachments/assets/724a1bea-e808-4098-8b83-863c764011fc">
+<img width="831" alt="Screenshot 2024-09-15 at 8 20 38 PM" src="https://github.com/user-attachments/assets/3ed06b67-84c5-4053-8f37-a3658431c50c">
 
-But there's a catch!! Each Bank only supports a set of modes of payments and can make or receive payments only via those. Only World Bank suppports all modes of payments. In our current example we have only three payment modes :
 
-Google_Pay
-AliPay
-Paytm
-Following is the list of Banks and their supported payment modes :
 
-Bank_of_America          -   Google_Pay, AliPay, Paytm
-Wells_Fargo              -   Google_Pay, AliPay
-Royal_Bank_of_Canada     -   AliPay
-Westpac                  -   Google_Pay, Paytm
-Goldman_Sachs            -   Paytm
-National_Australia_Bank  -   AliPay, Paytm
 To pick the first Bank, we calculate the net amount for every Bank by using the below formula and store them in list:
 
 net amount = [Sum of all credits(amounts to be received)] - [Sum of all debits(amounts to pay)]
