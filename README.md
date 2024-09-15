@@ -13,12 +13,17 @@ This is represented below as a directed graph with the directed edge representin
 
 
 If (magnitude of x) < y => X is completely settled and so removed from the list.
+
 If (magnitude of x) > y => Y is completely settled and so removed from the list.
+
 If (magnitude of x) = y => X and Y both are completely settled and so both are removed from the list.
+
 The same process is repeated for the remaining banks.
+
 For the current example, the transactions for minimum cash flow are as follows:
 
-image
+
+<img width="813" alt="Screenshot 2024-09-15 at 8 22 06 PM" src="https://github.com/user-attachments/assets/567954d7-4f84-4e5c-8ac2-ea8801184f15">
 
 So this is the required answer.
 
